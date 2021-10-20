@@ -2,6 +2,7 @@ abstract class Shape {
   getArea();
 }
 
+
 class Circle implements Shape {
   double radius = 0, area = 0;
   Circle(double radius) {
@@ -51,6 +52,7 @@ class Triangle implements Shape {
     print("triangle area is $area");
   }
 }
+
 //fill mixin8
 mixin Fill {
   void filled() {
@@ -62,7 +64,8 @@ class FilledCircle extends Circle with Fill {
   FilledCircle(double radius) : super(radius);
   void defineMe() {
     String stringArea = area.toStringAsFixed(2);
-    print("This is circle with area of $stringArea \n      this is a filled shape");
+    print(
+        "This is circle with area of $stringArea \n      this is a filled shape");
   }
 }
 
