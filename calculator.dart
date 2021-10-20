@@ -27,14 +27,9 @@ class Calc {
       result = n1 * n2;
     else if (operation == "/")
       result == n1 / n2;
-    else
-      error();
   }
 
-  void error() {
-    print("you have entered unsupported operation '$operation'");
-    getInputs();
-  }
+
 
   void getInputs() {
     getFirstNumber();
