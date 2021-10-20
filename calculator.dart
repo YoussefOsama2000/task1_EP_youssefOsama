@@ -23,7 +23,7 @@ class Calc {
       result = n1 + n2;
     else if (operation == "-")
       result = n1 - n2;
-    else if (operation == "*" || operation == "-")
+    else if (operation == "*" || operation == "x")
       result = n1 * n2;
     else if (operation == "/")
       result == n1 / n2;
@@ -52,6 +52,7 @@ class Calc {
     operation = stdin.readLineSync().toString();
     if (operation == "+" ||
         operation == "-" ||
+        operation == "*" ||
         operation == "x" ||
         operation == "/")
       return;
